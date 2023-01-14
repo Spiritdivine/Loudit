@@ -12,6 +12,8 @@ import fruit1 from '../home/hassets/fruit1.png';
 import skin1 from '../home/hassets/skin1.png';
 import clothing2 from '../home/hassets/clothing2.png';
 import clothing1 from '../home/hassets/clothing1.png';
+import phone1 from '../home/hassets/phone1.png';
+import furnitures1 from '../home/hassets/furnitures1.png';
 import { BsArrowRightShort } from "react-icons/bs";
 
 
@@ -130,45 +132,45 @@ const Palour = () => {
                 <div>Featured Category</div>
                 <div>
                     <div>
-                        <img src={clothing2} alt='image'/>
+                        <img src={phone1} alt='image'/>
                         <p>Store Name</p>
                     </div>
                     <div>
-                        <img src={clothing2} alt='image'/>
+                        <img src={furnitures1} alt='image'/>
                         <p>Store Name</p>
                     </div>
                     <div>
-                        <img src={clothing2} alt='image'/>
+                        <img src={phone1} alt='image'/>
                         <p>Store Name</p>
                     </div>
                     <div>
-                        <img src={clothing2} alt='image'/>
+                        <img src={phone1} alt='image'/>
                         <p>Store Name</p>
                     </div>
                 </div>
                 <div>
                     <div>
-                        <img src={clothing2} alt='image'/>
+                        <img src={clothing1} alt='image'/>
                         <p>Store Name</p>
                     </div>
                     <div>
-                        <img src={clothing2} alt='image'/>
+                        <img src={clothing1} alt='image'/>
                         <p>Store Name</p>
                     </div>
                     <div>
-                        <img src={clothing2} alt='image'/>
+                        <img src={clothing1} alt='image'/>
                         <p>Store Name</p>
                     </div>
                     <div>
-                        <img src={clothing2} alt='image'/>
+                        <img src={clothing1} alt='image'/>
                         <p>Store Name</p>
                     </div>
                     <div>
-                        <img src={clothing2} alt='image'/>
+                        <img src={clothing1} alt='image'/>
                         <p>Store Name</p>
                     </div>
                     <div>
-                        <img src={clothing2} alt='image'/>
+                        <img src={clothing1} alt='image'/>
                         <p>Store Name</p>
                     </div>
                 </div>
