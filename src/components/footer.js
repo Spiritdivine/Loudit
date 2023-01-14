@@ -6,28 +6,30 @@ const Footer = () => {
     return ( 
         <footer className="Bigfoot">
             <div className="Aboutit">
-                <div className="sub-about">
+                <div className="sub-about1">
                     <div>
-                        <p><a href="#">ABOUT LOUDIT</a></p>
+                        <p className='About'><a href="#">ABOUT LOUDIT</a></p>
                     </div>
-                    <div>
+                    
+                    <div className='footer-md-layer'>
                         <p><a href="#">Contact US</a></p>
                         <p><a href="#">Privacy Policy</a></p>
                         <p><a href="#">Terms & Condition</a></p>
                     </div>
+
                     <div>
                         <p><a href="#">About Us</a></p>
                     </div>
                 </div>
-                <div>
+                <div className='sub-about2'>
                     <span><a href='#'>CONNECT WITH US</a></span>
                     <div>
-                        <span><a href='#'><FacebookIcon /></a></span>
-                        <span><a href='#'><TwitterIcon /></a></span>
+                        <span className='fbi'><a href='#'><FacebookIcon/></a></span>
+                        <span className='twi'><a href='#'><TwitterIcon /></a></span>
                     </div>
                 </div>
             </div>
-            <div>
+            <div className='copyright'>
                 <p>copyright <span><CopyrightOutlinedIcon /></span> 2021 Loudit All rights reserved</p>
             </div>
         </footer>

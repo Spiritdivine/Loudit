@@ -1,7 +1,7 @@
 import { Checkbox, TextField, FormGroup, FormControlLabel, Button } from '@mui/material';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
-import GoogleIcon from '@mui/icons-material/Google';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { FcGoogle } from "react-icons/fc";
 
 const theme = createTheme({
     palette: {
@@ -15,20 +15,26 @@ const theme = createTheme({
 const FormIn = () => {
     return ( 
         <div className="embody">
-            <div className="sub-embody">
+            <div className="sub-embody" style={{height:'582px'}}>
 
-                <h1>Let's Sign You In</h1>
+                <h1 style={{marginBottom:'16px'}}>Let's Sign You In</h1>
                 <p>Welcome back, you've been missed!</p>
 
                 <div className="form">
 
-                    <div><TextField fullWidth id="standard-basic" label="E-Mail" variant="standard" /></div>
-                    <div><TextField fullWidth id="standard-basic" label="Password" variant="standard" /></div>
+                    <div className='inputControl'>
+                        <TextField fullWidth id="standardEmail" label="E-Mail" variant="standard" />
+                        <div className='error'></div>
+                    </div>
+                    <div className='lastInput'>
+                        <TextField fullWidth id="standardPass" label="Password" variant="standard" />
+                        <div className='error'></div>
+                    </div>
 
                     <div className="sub-form2">
                         <div>
                             <FormGroup>
-                                <FormControlLabel control={<Checkbox />} label="Remember Me" />
+                                <FormControlLabel control={<Checkbox />} label="Remember me" />
                             </FormGroup>
                         </div>
                         <div className="forget">
@@ -36,27 +42,25 @@ const FormIn = () => {
                         </div>
                     </div>
 
-                    <ThemeProvider theme={theme}>
-                        <Button color="secondary" variant='contained' fullWidth>Sign In</Button>
-                    </ThemeProvider>
+                    <div className="submitbtn">
+                        <ThemeProvider theme={theme}>
+                        <Button color="secondary" variant='contained' fullWidth  typeof='submit' style={{height:'56px', borderRadius:'10px', fontSize:'24px', fontWeight:'500'}}>Sign In</Button>
+                        </ThemeProvider>
+                    </div>
 
                     <div className="no-account">
                         <p>Don't have an account? <span>Sign Up</span></p>
                     </div>
                     <div className="Or">
-                        <span>OR</span>
+                        <span style={{margin:'5px'}}>OR</span>
                     </div>
                     <div className="signupstream">
-                        <div className="signupstreamdiv">
-                            <div>Sign up with<GoogleIcon htmlColor='secondary' fontSize='large'/></div>
+                        <div className="signupstreamdiv gg">
+                            <div style={{position:'relative', bottom:'5px'}}><span style={{position:'relative', bottom:'0px'}}>Sign up with</span><FcGoogle fontSize='33.33px'/></div>
                         </div>
-                        <div className="signupstreamdiv">  
-                            <div>Sign up with<FacebookRoundedIcon htmlColor='blue' fontSize='large'/></div>
+                        <div className="signupstreamdiv fb">  
+                            <div style={{position:'relative', bottom:'5px'}}><span style={{position:'relative', bottom:'0px'}}>Sign up with</span><FacebookRoundedIcon htmlColor='blue' fontSize='large'/></div>
                         </div>
-                    </div>
-                    <div className="bysign">
-                        <p><a href="#">By signing up,</a></p>
-                        <p> you agree to our <span><a href="#">Terms of Use</a></span> and <span><a href="#">Privacy Policy</a></span></p>
                     </div>
 
                 </div>

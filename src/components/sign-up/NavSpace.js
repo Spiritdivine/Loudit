@@ -1,9 +1,11 @@
-import GridViewIcon from '@mui/icons-material/GridView';
+import { IoGridOutline } from "react-icons/io5";
+
+
 const NavSpace = () => {
     return ( 
         <div className="extension">
             <ul className="list">
-                <li className="bluelist"><a href="#"><GridViewIcon />Categories</a></li>
+                <li className="bluelist"><a href="#"><IoGridOutline style={{fontSize:'1.5em'}} />Categories</a></li>
                 <li className="bluelist"><a href="#">Phone & Tablets</a></li>
                 <li className="bluelist"><a href="#">Computing</a></li>
                 <li className="bluelist"><a href="#">Health & Beauty</a></li>
