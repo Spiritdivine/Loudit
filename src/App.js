@@ -5,11 +5,12 @@ import Forgot from './components/forgotpass/Forgot';
 import Main from './components/sign-up/Main';
 import Welbody from './components/pages/welcome/welbody';
 import Palour from './components/pages/home/palour';
+import Home from './components/pages/home/home';
 
 function App() {
   return (
     <>
-      <Palour/>
+      <Home/>
     </>
        
     

@@ -1,6 +1,7 @@
 import NavBar from "../../sign-up/NavBar";
 import NavSpace from "../../sign-up/NavSpace";
 import Footer from "../../footer";
+import Palour from "./palour";
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
         <div>
             <NavBar/>
             <NavSpace/>
+            <Palour/>
             <Footer/>
         </div>
      );
