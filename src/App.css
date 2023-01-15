@@ -663,5 +663,119 @@ button{
   color: #000000;
 }
 
+.door4 > :nth-child(3){
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.door4 > :nth-child(3) p{
+  text-align: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
 
 
+  color: #000000;
+}
+
+
+.door5{
+  margin-top: 20px;
+}
+
+.door5 >:first-child{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  background: #FFFFFF;
+  border: 1px solid #5CD3E4;
+  border-radius: 10px 10px 0px 0px;
+}
+
+
+.door5 > :first-child > :first-child{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  letter-spacing: 0.323529px;
+
+  color: #474749;
+}
+
+.door5 > :first-child > :nth-child(2){
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  letter-spacing: 0.323529px;
+
+  color: #474749;
+}
+
+.door5 > :nth-child(2){
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #FFFFFF;
+}
+
+.door6 > :nth-child(2){
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #FFFFFF;
+}
+
+.door6{
+  margin-top: 20px;
+}
+
+.door6 >:first-child{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  background: #FFFFFF;
+  border: 1px solid #5CD3E4;
+  border-radius: 10px 10px 0px 0px;
+}
+
+
+.door6 > :first-child > :first-child{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  letter-spacing: 0.323529px;
+
+  color: #474749;
+}
+
+.door6 > :first-child > :nth-child(2){
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  letter-spacing: 0.323529px;
+
+  color: #474749;
+}

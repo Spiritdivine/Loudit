@@ -14,7 +14,50 @@ import clothing2 from '../home/hassets/clothing2.png';
 import clothing1 from '../home/hassets/clothing1.png';
 import phone1 from '../home/hassets/phone1.png';
 import furnitures1 from '../home/hassets/furnitures1.png';
+import pringles from '../home/hassets/pringles.png';
+import fan from '../home/hassets/fan.png';
+import flash from '../home/hassets/flash.png';
+import fridge from '../home/hassets/fridge.png';
+import theatre from '../home/hassets/theatre.png';
+import tele from '../home/hassets/tele.png';
 import { BsArrowRightShort } from "react-icons/bs";
+import { FaHeart } from "react-icons/fa";
+import PropTypes from 'prop-types';
+import Box from '@mui/material/Box';
+
+
+function Item(props) {
+    const { sx, ...other } = props;
+    return (
+      <Box
+        sx={{
+          bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : '#fff'),
+          color: (theme) => (theme.palette.mode === 'dark' ? 'grey.300' : 'grey.800'),
+          borderColor: (theme) =>
+            theme.palette.mode === 'dark' ? 'grey.800' : 'grey.300',
+          p: 1,
+          borderRadius: 2,
+          fontSize: '0.875rem',
+          fontWeight: '700',
+          ...sx,
+        }}
+        {...other}
+      />
+    );
+}
+
+Item.propTypes = {
+/**
+ * The system prop that allows defining system overrides as well as additional CSS styles.
+ */
+sx: PropTypes.oneOfType([
+    PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.func, PropTypes.object, PropTypes.bool]),
+    ),
+    PropTypes.func,
+    PropTypes.object,
+    ]),
+};
 
 
 const Palour = () => {
@@ -151,27 +194,242 @@ const Palour = () => {
                 <div>
                     <div>
                         <img src={clothing1} alt='image'/>
-                        <p>Store Name</p>
+                        <p>Grocery</p>
                     </div>
                     <div>
                         <img src={clothing1} alt='image'/>
-                        <p>Store Name</p>
+                        <p>Computer</p>
                     </div>
                     <div>
                         <img src={clothing1} alt='image'/>
-                        <p>Store Name</p>
+                        <p>Baby Products</p>
                     </div>
                     <div>
                         <img src={clothing1} alt='image'/>
-                        <p>Store Name</p>
+                        <p>Health and Beauty</p>
                     </div>
                     <div>
                         <img src={clothing1} alt='image'/>
-                        <p>Store Name</p>
+                        <p>Grocery</p>
                     </div>
                     <div>
                         <img src={clothing1} alt='image'/>
-                        <p>Store Name</p>
+                        <p>Fashion</p>
+                    </div>
+                </div>
+            </div>
+            <div className='door5'>
+                <div>
+                    <div>Recommended deals for you</div>
+                    <div>see all details</div>
+                </div>
+                <div>
+                    <Box
+                        sx={{
+                            display: 'grid',
+                            columnGap: 3,
+                            rowGap: 1,
+                            gridTemplateColumns: 'repeat(2, 1fr)',
+                            padding: '5px',
+                          }}
+                        
+                    >
+                        <Item>
+                            <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+                                <div><img src={phone1} alt='image'/></div>
+                                <div>
+                                    <p>Apple Iphone 12 Pro Max 128GB</p>
+                                    <p>Pacific Blue - Unlocked</p>
+                                    <p>#850,000</p>
+                                    <div><FaHeart/></div>
+                                </div>
+                            </div>
+                        </Item>
+                        <Item>
+                            <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+                                <div><img src={phone1} alt='image'/></div>
+                                <div>
+                                    <p>Apple Iphone 12 Pro Max 128GB</p>
+                                    <p>Pacific Blue - Unlocked</p>
+                                    <p>#850,000</p>
+                                    <div><FaHeart/></div>
+                                </div>
+                            </div>
+                        </Item>
+                        <Item>
+                            <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+                                <div><img src={phone1} alt='image'/></div>
+                                <div>
+                                    <p>Apple Iphone 12 Pro Max 128GB</p>
+                                    <p>Pacific Blue - Unlocked</p>
+                                    <p>#850,000</p>
+                                    <div><FaHeart/></div>
+                                </div>
+                            </div>
+                        </Item>
+                        <Item>
+                            <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+                                <div><img src={phone1} alt='image'/></div>
+                                <div>
+                                    <p>Apple Iphone 12 Pro Max 128GB</p>
+                                    <p>Pacific Blue - Unlocked</p>
+                                    <p>#850,000</p>
+                                    <div><FaHeart/></div>
+                                </div>
+                            </div>
+                        </Item>
+                    </Box>
+                </div>
+            </div>
+            <div className='door6'>
+                <div>
+                    <div>Recommended deals for you</div>
+                    <div>see all details</div>
+                </div>
+                <div>
+                    <div>
+                        <img src={pringles} alt='image'/>
+                        <p>pringles</p>
+                        <p>#1200</p>
+                        <p>200 sold items</p>
+                    </div>
+                    <div>
+                        <img src={flash} alt='image'/>
+                        <p>OTG USB flash -128GB</p>
+                        <p>#1200</p>
+                        <p>200 sold items</p>
+                    </div>
+                    <div>
+                        <img src={fan} alt='image'/>
+                        <p>OX Rechargeable Fan with 2.....</p>
+                        <p>#1200</p>
+                        <p>200 sold items</p>
+                    </div>
+                    <div>
+                        <img src={flash} alt='image'/>
+                        <p>OTG USB flash -128GB</p>
+                        <p>#1200</p>
+                        <p>200 sold items</p>
+                    </div>
+                    <div>
+                        <img src={fan} alt='image'/>
+                        <p>OX Rechargeable Fan with 2.....</p>
+                        <p>#1200</p>
+                        <p>200 sold items</p>
+                    </div>
+                </div>
+            </div>
+            <div className='door6'>
+                <div>
+                    <div>Flash Sales / Free Delivery</div>
+                    <div>see more</div>
+                </div>
+                <div>
+                    <div>
+                        <img src={pringles} alt='image'/>
+                        <p>pringles</p>
+                        <p>#1200</p>
+                        <p>200 sold items</p>
+                    </div>
+                    <div>
+                        <img src={flash} alt='image'/>
+                        <p>OTG USB flash -128GB</p>
+                        <p>#1200</p>
+                        <p>200 sold items</p>
+                    </div>
+                    <div>
+                        <img src={fan} alt='image'/>
+                        <p>OX Rechargeable Fan with 2.....</p>
+                        <p>#1200</p>
+                        <p>200 sold items</p>
+                    </div>
+                    <div>
+                        <img src={flash} alt='image'/>
+                        <p>OTG USB flash -128GB</p>
+                        <p>#1200</p>
+                        <p>200 sold items</p>
+                    </div>
+                    <div>
+                        <img src={fan} alt='image'/>
+                        <p>OX Rechargeable Fan with 2.....</p>
+                        <p>#1200</p>
+                        <p>200 sold items</p>
+                    </div>
+                </div>
+            </div>
+            <div className='door6'>
+                <div>
+                    <div>Discounted Electronics</div>
+                    <div>see all details</div>
+                </div>
+                <div>
+                    <div>
+                        <img src={theatre} alt='image'/>
+                        <p>LG DVD Home Theatre</p>
+                        <p>#90, 500</p>
+                        <p>200 sold items</p>
+                    </div>
+                    <div>
+                        <img src={fridge} alt='image'/>
+                        <p>OTG USB flash -128GB</p>
+                        <p>#1200</p>
+                        <p>200 sold items</p>
+                    </div>
+                    <div>
+                        <img src={tele} alt='image'/>
+                        <p>OX Rechargeable Fan with 2.....</p>
+                        <p>#1200</p>
+                        <p>200 sold items</p>
+                    </div>
+                    <div>
+                        <img src={theatre} alt='image'/>
+                        <p>OTG USB flash -128GB</p>
+                        <p>#1200</p>
+                        <p>200 sold items</p>
+                    </div>
+                    <div>
+                        <img src={tele} alt='image'/>
+                        <p>OX Rechargeable Fan with 2.....</p>
+                        <p>#1200</p>
+                        <p>200 sold items</p>
+                    </div>
+                </div>
+            </div>
+            <div className='door6'>
+                <div>
+                    <div>Under N2,000 just for you</div>
+                    <div>Small money</div>
+                </div>
+                <div>
+                    <div>
+                        <img src={pringles} alt='image'/>
+                        <p>pringles</p>
+                        <p>#1200</p>
+                        <p>200 sold items</p>
+                    </div>
+                    <div>
+                        <img src={flash} alt='image'/>
+                        <p>OTG USB flash -128GB</p>
+                        <p>#1200</p>
+                        <p>200 sold items</p>
+                    </div>
+                    <div>
+                        <img src={fan} alt='image'/>
+                        <p>OX Rechargeable Fan with 2.....</p>
+                        <p>#1200</p>
+                        <p>200 sold items</p>
+                    </div>
+                    <div>
+                        <img src={fan} alt='image'/>
+                        <p>OX Rechargeable Fan with 2.....</p>
+                        <p>#1200</p>
+                        <p>200 sold items</p>
+                    </div>
+                    <div>
+                        <img src={flash} alt='image'/>
+                        <p>OTG USB flash -128GB</p>
+                        <p>#1200</p>
+                        <p>200 sold items</p>
                     </div>
                 </div>
             </div>
