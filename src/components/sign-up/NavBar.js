@@ -6,6 +6,8 @@ import Cart from '../navbar/cart';
 import Support from '../navbar/support';
 import Stores from '../navbar/stores';
 import Profile from '../navbar/profile';
+import { Outlet, Link } from "react-router-dom";
+import Yard from './yard';
 
 
 
@@ -42,13 +44,16 @@ const NavBar = () => {
                 <li><a href='/'><img src={logo} className='logo' alt='logo' style={{ width: 110, height: 40 }}></img></a></li>
                 
                 <div>
-                    <Sell/>
+                    <Link to='/forgot'><Sell/></Link>
+                    
                 </div>
+                <li>
+                    <Link to='/signin'><Logistics/></Link>
+                    
+                </li>
                 <div>
-                    <Logistics/>
-                </div>
-                <div>
-                    <Search/>
+                    <Link to='/yard'><Search/></Link>
+                    
                 </div>
                 
                 <li style={{width:'114px'}}>
@@ -67,7 +72,10 @@ const NavBar = () => {
 
             </ul>
 
+            <Outlet />
+
         </nav>
+        
      );
 }
  
