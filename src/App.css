@@ -411,7 +411,7 @@ button{
 /* Home Page */
 
 .palour{
-  padding: 30px 15px 20px 45px;
+  padding: 30px 20px 20px 20px;
   background: #EBEBEB;
 }
 
@@ -659,6 +659,20 @@ button{
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+  padding: 0px 14px 31px 14px;
+}
+
+.door4 > :nth-child(2) > div img{
+  width: 300px;
+  height: 142px;
+}
+
+.door4 > :nth-child(2) div > div{
+  background: #FFFFFF;
+  border: 1px solid #0BA1B2;
+  border-radius: 0px 0px 5px 5px;
+  width: 300px;
+  height: 40px;
 }
 
 .door4 > :nth-child(2) p{
@@ -679,6 +693,7 @@ button{
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+  padding: 0px 14px 31px 14px;
 }
 
 .door4 > :nth-child(3) p{
@@ -694,6 +709,18 @@ button{
   color: #000000;
 }
 
+.door4 > :nth-child(3) div > div{
+  background: #FFFFFF;
+  border: 1px solid #0BA1B2;
+  border-radius: 0px 0px 5px 5px;
+  width: 195px;
+  height: 40px;
+}
+
+.door4 > :nth-child(3) > div  img{
+  width: 195px;
+  height: 220px;
+}
 
 .door5{
   margin-top: 20px;
@@ -791,6 +818,79 @@ button{
   color: #474749;
 }
 
+.door6 > :nth-child(2){
+  padding:20px 15px 20px 15px;
+}
+
+.door6 > :nth-child(2) > div {
+  margin-right: 20px;
+}
+
+.door6 p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  letter-spacing: -0.38px;
+
+  color: #000000;
+}
+
+.door6 img{
+  width: 230px;
+  height: 300px;
+}
+
+.door6 p+p+p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+  
+  letter-spacing: -0.38px;
+  
+  color: #FF093A;
+}
+
+.brands{
+  margin-top: 40px;
+}
+
+.brands > :first-child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 25px;
+  background: #FFFFFF;
+  border: 1px solid #5CD3E4;
+  border-radius: 10px 10px 0px 0px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  letter-spacing: 0.323529px;
+
+  color: #474749;
+}
+
+.brands > :nth-child(2){
+  padding: 20px 16px;
+  background: #ffffff;
+}
+
+.brands > :nth-child(2) > div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 .budget{
   display: flex;
