@@ -71,7 +71,9 @@ const Palour = () => {
         <div className="palour">
             <div className="door1">
                 <div>
+
                     <Divslide2/>
+
                 </div>
                 
                 <div className='subdoor12'>

@@ -6,7 +6,9 @@ import Cart from '../navbar/cart';
 import Support from '../navbar/support';
 import Stores from '../navbar/stores';
 import Profile from '../navbar/profile';
+
 import { Link, Outlet } from 'react-router-dom';
+
 
 
 
@@ -46,6 +48,7 @@ const NavBar = () => {
                 
                 <Link to="signup">
                 
+
                     <Sell/>
                     
                 </Link>
@@ -55,8 +58,12 @@ const NavBar = () => {
                     
                 </Link>
             
+
+               
+
                 <div>
-                    <Search/>
+                    <Link to='/yard'><Search/></Link>
+                    
                 </div>
                 
                 <li style={{width:'114px'}}>
@@ -76,7 +83,10 @@ const NavBar = () => {
             </ul>
             <Outlet/>
 
+            <Outlet />
+
         </nav>
+        
      );
 }
  
