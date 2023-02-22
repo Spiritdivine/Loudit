@@ -25,13 +25,11 @@ import inc from '../home/hassets/inc.png';
 import lg from '../home/hassets/lg.png';
 import ox from '../home/hassets/ox.png';
 import { TbCurrencyNaira } from "react-icons/tb";
-
-
 import { FaHeart } from "react-icons/fa";
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
-import SimpleSlider from './carousel';
 import { BsFillArrowRightSquareFill } from "react-icons/bs";
+import Divslide2 from "../home/divslide2"
 
 
 function Item(props) {
@@ -73,7 +71,9 @@ const Palour = () => {
         <div className="palour">
             <div className="door1">
                 <div>
-                    <SimpleSlider/>
+
+                    <Divslide2/>
+
                 </div>
                 
                 <div className='subdoor12'>

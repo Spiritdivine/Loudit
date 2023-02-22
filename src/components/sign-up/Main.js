@@ -42,8 +42,9 @@ const Main = () => {
                     <div className="sub-form2">
                         <div>
                             <FormGroup>
-                                <FormControlLabel control={<Checkbox color='red'/>} label="Show Password" />
+                                <FormControlLabel control={<Checkbox/>} label="Show Password" />
                             </FormGroup>
+                            
                         </div>
                         <div className="forget">
                             <a href="#">Forget Password?</a>

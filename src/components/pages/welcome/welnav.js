@@ -43,9 +43,11 @@ const Welnav = () => {
         <nav className="welnav">
             
             <div style={welnavsty}>
-                <div>
-                    <Sell/>
-                </div>
+                <a href="">
+                    <div>
+                        <Sell/>
+                    </div>
+                </a>
                 
                 <div>
                     <Sell/>
